@@ -39,6 +39,10 @@ h3{
 	text-decoration: none;
 }
 
+.klik_naar_content{
+	cursor: pointer;
+}
+
 .logo{
 	/*align-items: center;*/
 }

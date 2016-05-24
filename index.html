@@ -25,7 +25,7 @@
       <div>
         <h1>Modus:</h1>
         <p>"… een straightforward manier van uren registratie."</p>
-        <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-angle-down fa-2x klik_naar_content" aria-hidden="true"></i>
       </div>
     </div>
     <div class="video_banner">
@@ -80,5 +80,15 @@
         <li><a href="pages/contact.html">Contact</a></li>
       </ul>
     </div>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $(".klik_naar_content").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".video_banner").offset().top
+                }, 1000);
+            });
+        });
+    </script>
   </body>
 </html>
