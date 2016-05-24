@@ -1,0 +1,757 @@
+/*----------------------- ALGEMEEN -----------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body{
+	font-family: "Fira Sans", sans-serif;
+	color: #213633;
+}
+
+a{
+	color: #213633;
+	font-weight: 300;
+}
+
+h3{
+	font-weight: 400;
+}
+
+
+/*--------------------- HEADER & HERO ----------------------*/
+.header { 
+	display: flex;
+	align-items: center;
+	max-width: 1000px;
+    margin: 0 auto;
+    height: 80px;
+    padding-top: 20px;
+}
+
+.nav li{
+	margin-left: 50px;
+}
+
+.nav a{
+	text-decoration: none;
+}
+
+.logo{
+	/*align-items: center;*/
+}
+
+.logo a{
+	font-weight: 400;
+	font-size: 40px;
+ 	 background: -webkit-linear-gradient(135deg, rgba(172,216,205,1) 0%, rgba(191,229,235,1) 20%, rgba(160,192,227,1) 40%, rgba(163,177,213,1) 60%, rgba(186,175,195,1) 80%, rgba(202,191,202,1) 100%);
+ 	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.nav {
+	flex: 1;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.active{
+	/*text-decoration: underline !important;*/
+	border-bottom: 1px solid #B7AFC5;
+	padding-bottom: 3px;
+}
+
+.banner{
+	display: flex;
+	height: 80vh;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background:linear-gradient(135deg, rgba(172,216,205,1) 0%, rgba(191,229,235,1) 20%, rgba(160,192,227,1) 40%, rgba(163,177,213,1) 60%, rgba(186,175,195,1) 80%, rgba(202,191,202,1) 100%);
+	color:#ffffff;
+}
+
+.banner_overige_paginas{
+	display: flex;
+	height: 30px;
+	background:linear-gradient(135deg, rgba(172,216,205,1) 0%, rgba(191,229,235,1) 20%, rgba(160,192,227,1) 40%, rgba(163,177,213,1) 60%, rgba(186,175,195,1) 80%, rgba(202,191,202,1) 100%);
+}
+
+.banner h1{
+	font-weight: 300;
+	font-size: 120px;
+	text-shadow: 0px 0px 5px rgba(150, 150, 150, 1);
+}
+
+.banner p{
+	font-size: 40px;
+	font-weight: 300;
+	text-shadow: 0px 0px 5px rgba(150, 150, 150, 1);
+	font-style: italic;
+}
+
+.banner i{
+	padding-top: 150px;
+}
+
+/*----------------------- VIDEO & CONTENT ------------------------*/
+.video_banner{
+	display: flex;
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.video{
+	display: flex;
+	/*max-width: 1000px;*/
+	/*position: relative;*/
+	/*padding-bottom: 56.25%; /* 16:9 */
+	/*padding-top: 25px;*/
+	/*height: 0;*/
+	/*margin: 0 auto;*/
+	/*margin-top: 100px;*/
+	flex: 5;
+}
+
+.video iframe{
+	/*position: absolute;*/
+	/*top: 0;*/
+	/*left: 0;*/
+	width: 100%;
+	/*height: 100%;*/
+	/*flex: 1;*/
+	border: none;
+}
+
+.video_info{
+	/*display: flex;*/
+	flex: 3;
+	/*max-width: 1000px;*/
+	margin: 0 auto;
+	/*flex-flow: row wrap;*/
+	line-height: 1.7;
+	/*padding-bottom: 100px;*/
+	margin-left: 50px;
+}
+
+.video_info h3{
+	/*margin-top: 50px;*/
+}
+
+.video_info p, .product_info p, .contact_info p{
+	font-weight: 300;
+} 
+
+.product_info{
+	display: flex;
+	max-width: 1000px;
+	margin: 0 auto;
+	flex-flow: row wrap;
+	line-height: 1.7;
+	padding: 100px 0;
+}
+
+.contact_info{
+	display: flex;
+	max-width: 1000px;
+	margin: 0 auto;
+	line-height: 1.7;
+	padding: 100px 0;
+}
+
+.geg_contact{
+	flex: 1;
+}
+
+.geg_contact i{
+
+}
+
+/*----------------------- QUOTE BANNER ---------------------------*/
+.banner_2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:linear-gradient(135deg, rgba(172,216,205,1) 0%, rgba(191,229,235,1) 20%, rgba(160,192,227,1) 40%, rgba(163,177,213,1) 60%, rgba(186,175,195,1) 80%, rgba(202,191,202,1) 100%);
+	color:#ffffff;
+	height: 125px;	
+}
+
+.banner_2 p{
+	max-width: 1000px;
+	font-size: 40px;
+	font-weight: 300;
+	text-shadow: 0px 0px 5px rgba(150, 150, 150, 1);
+}
+
+/*----------------------- VOORDELEN ------------------------------*/
+.voordelen p{
+	font-weight: 300;
+}
+
+.voordelen{
+	display: flex;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 100px 0 100px 0;
+	line-height: 1.7;
+}
+
+.teamleden{
+	display: flex;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 100px 0 100px 0;
+	line-height: 1.7;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.voordelen_tekst{
+	flex: 1;
+}
+
+.screen_web{
+	flex: 1;
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+.team{
+	text-align: center;
+}
+
+.team img{
+	width: 80%;
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+
+.pers_omschr{
+	font-style: italic;
+	font-weight: 300;
+}
+
+.pers_naam{
+	font-weight: 400;
+}
+
+.voordelen_tekst p{
+	padding-left: 20px;
+}
+
+.my-slider{
+	flex: 1;
+	justify-content: space-around;
+}
+
+.afbeelding_slider{
+	display: flex;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 100px 0 100px 0;
+	justify-content: center;
+	text-align: center;
+}
+
+/*----------------------- EMAIL BANNER ---------------------------*/
+.banner_3_bg{
+	background: #f9f9f9;
+	padding: 40px 0;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+
+.banner_3{
+	display: flex;
+	max-width: 1000px;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.banner_3 div{
+	display:flex;
+}
+
+.banner_3 p{
+	flex: 1;
+	font-size: 40px;
+	font-weight: 300;
+}
+
+
+input[type="text"] {
+	display: block;
+	width: 300px;
+	margin: 0;
+	font-family: "Fira Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	font-style: italic;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+}
+input[type="text"]:focus {
+	outline: none;
+}
+
+.style-1 input[type="text"] {
+	padding: 10px;
+	border: solid 1px #dcdcdc;
+	transition: box-shadow 0.3s, border 0.3s;
+}
+.style-1 input[type="text"]:focus,
+.style-1 input[type="text"].focus {
+	border: solid 1px #707070;
+	box-shadow: 0 0 5px 1px #969696;
+}
+
+.style-1{
+	list-style: none;
+}
+
+::-webkit-input-placeholder {
+	font-family: "Fira Sans", sans-serif;
+	font-style: italic;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	font-family: "Fira Sans", sans-serif;
+	font-style: italic;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	font-family: "Fira Sans", sans-serif;
+	font-style: italic;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+:-ms-input-placeholder {  
+	font-family: "Fira Sans", sans-serif;
+	font-style: italic;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+button {
+  display: inline-block;
+  padding: 0 20px;
+  font-family: "Fira Sans", sans-serif;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0;
+  height: 41px;
+}
+
+button:focus {
+  outline: none
+}
+
+section.flat button {
+  color: #fff;
+  background-color: #777777;
+  border: none;
+}
+
+section.flat button:hover,
+section.flat button.hover {
+  background-color: #676767;
+}
+
+section.flat button:active,
+section.flat button.active {
+  background-color: #545454;
+}
+
+/*------------------------- FOOTER ------------------------*/
+.footer{
+	display: flex;
+	align-items: center;
+	max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.desc{
+	font-weight: 300;
+}
+
+
+/*--------------------- MEDIA QUERIES --------------------*/
+.header, .banner, .video_banner, .banner_2, .voordelen, .banner_3_bg, .footer, .product_info, .afbeelding_slider, .teamleden, .contact_info{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	.video_banner{
+		flex-direction:	column;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.video{
+		height: 480px;
+	}
+
+	.video_info{
+		margin-left: 0px;
+		padding-right: 30px;
+		padding-left: 30px;
+		padding-top: 50px;
+	}
+
+	.voordelen{
+		flex-direction: column-reverse;
+	}
+
+	.voordelen ul{
+		padding-top: 50px;
+	}
+
+	.banner_3{
+		flex-direction: column;
+	}
+
+	.banner_3 p{
+		padding-bottom: 25px;
+	}
+
+}
+
+@media only screen and (min-width : 357px) and (max-width : 480px) {
+	.banner h1{
+		font-size: 50px;
+	}
+
+	.banner p, .banner_2 p{
+		font-size: 20px;
+	}
+
+	.banner{
+		height: 200px;
+	}
+
+	.banner i{
+		padding-top: 20px;
+	}
+
+	.video_banner{
+		flex-direction:	column;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.video{
+		height: 240px;
+	}
+
+	.video_info{
+		margin-left: 0px;
+		padding-right: 30px;
+		padding-left: 30px;
+		padding-top: 50px;
+	}
+
+	.voordelen{
+		flex-direction: column-reverse;
+	}
+
+	.voordelen ul{
+		padding-top: 50px;
+	}
+
+	.banner_3{
+		flex-direction: column;
+	}
+
+	input[type="text"] {
+		width: 200px;
+	}
+
+	.banner_3 p{
+		padding-bottom: 25px;
+		font-size: 30px;
+	}
+
+	.footer{
+		flex-direction: column-reverse;
+	}
+
+	.footer .nav li{
+		margin-left: 0px;
+	}
+
+	.footer .nav{
+		padding-bottom: 40px;
+	}
+
+	.footer .nav li:not(:first-child){
+		padding-left: 30px;
+	}
+}
+
+@media only screen and (max-width : 356px) {
+	.banner h1{
+		font-size: 50px;
+	}
+
+	.banner p, .banner_2 p{
+		font-size: 16px;
+	}
+
+	.banner{
+		height: 200px;
+	}
+
+	.banner i{
+		padding-top: 20px;
+	}
+
+	.video_banner{
+		flex-direction:	column;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.video{
+		height: 240px;
+	}
+
+	.video_info{
+		margin-left: 0px;
+		padding-right: 30px;
+		padding-left: 30px;
+		padding-top: 50px;
+	}
+
+	.voordelen{
+		flex-direction: column-reverse;
+	}
+
+	.voordelen ul{
+		padding-top: 50px;
+	}
+
+	.banner_3{
+		flex-direction: column;
+	}
+
+	input[type="text"] {
+		width: 200px;
+	}
+
+	.banner_3 p{
+		padding-bottom: 25px;
+		font-size: 16px;
+	}
+
+	.footer{
+		flex-direction: column-reverse;
+	}
+
+	.footer .nav li{
+		margin-left: 0px;
+	}
+
+	.footer .nav{
+		padding-bottom: 40px;
+	}
+
+	.footer .nav li:not(:first-child){
+		padding-left: 30px;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px){
+	.banner h1{
+		font-size: 80px;
+	}
+
+	.banner p, .banner_2 p{
+		font-size: 28px;
+	}
+
+	.banner{
+		height: 400px;
+	}
+
+	.banner i{
+		padding-top: 100px;
+	}
+
+	.video_banner{
+		flex-direction:	column;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.video{
+		height: 360px;
+	}
+
+	.video_info{
+		margin-left: 0px;
+		padding-right: 30px;
+		padding-left: 30px;
+		padding-top: 50px;
+	}
+
+	.voordelen{
+		flex-direction: column-reverse;
+	}
+
+	.voordelen ul{
+		padding-top: 50px;
+	}
+
+	.screen_web{
+		/*text-align: center;*/
+	}
+
+	.banner_3{
+		flex-direction: column;
+	}
+
+	.banner_3 p{
+		font-size: 28px;
+		padding-bottom: 25px;
+	}
+
+	.footer{
+		flex-direction: column-reverse;
+	}
+
+	.footer .nav li{
+		margin-left: 0px;
+	}
+
+	.footer .nav{
+		padding-bottom: 40px;
+	}
+
+	.footer .nav li:not(:first-child){
+		padding-left: 50px;
+	}
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1024px){
+	.banner_3, .voordelen{
+		flex-direction: row;
+	}
+
+	.banner_3 p{
+		padding-bottom: 0;
+	}
+
+	.voordelen ul{
+		padding-top: 20px;
+	}
+
+	.screen_web{
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 1025px){
+	.screen_web{
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.header .nav{
+		flex-direction: column;
+		padding-top: 40px;
+    	padding-bottom: 40px;
+    	width: 100%;
+	}
+
+	.header .nav a li{
+		margin-left: 0;
+		padding-bottom: 10px;
+	}
+
+	.header .nav a:not(:first-child){
+		padding-top: 30px;
+	}
+
+	.header{
+		flex-direction: column;
+		align-items: flex-start;
+		height: 100%;
+	}
+
+	.active_klein{
+		border-bottom: 1px solid #B7AFC5;
+		padding-bottom: 3px;
+	}
+
+	.header .active{
+		border-bottom: none;
+	}
+}
+
+@media only screen and (min-width: 600px){
+	.active_klein{
+		border-bottom: none;
+	}
+
+}
+
+@media only screen and (max-width: 500px){
+	.afbeelding_slider img{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1059px){
+	.team:not(:last-child){
+		padding-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.contact_info{
+		flex-direction: column;
+	}
+
+	.geg_contact:not(:first-child){
+		padding-top: 50px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
