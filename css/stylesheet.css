@@ -264,9 +264,9 @@ h3{
 	padding-bottom: 8px;
 }
 
-.contact_each p:not(:last-child){
+/*.contact_each p:not(:last-child){
 	margin-bottom: 50px;
-}
+}*/
 
 .contact_each i{
 	padding-right: 10px;
@@ -938,6 +938,14 @@ section.flat button.active {
 
 	.contact_each{
 		flex-direction: column;
+	}
+
+	.contact_each p:not(:last-child) {
+    	margin-bottom: 50px;
+	}
+
+	.contact_each p:last-child{
+		margin-top: -50px;
 	}
 }
 
