@@ -141,6 +141,12 @@ h3{
 	justify-content: center;
 	text-align: center;
 	background:linear-gradient(135deg, rgba(172,216,205,1) 0%, rgba(191,229,235,1) 20%, rgba(160,192,227,1) 40%, rgba(163,177,213,1) 60%, rgba(186,175,195,1) 80%, rgba(202,191,202,1) 100%);
+	/*background-image: url("../images/test_img.jpg"), linear-gradient(#eb01a5, #d13531);*/
+	background: url("../images/test_img2.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	color:#ffffff;
 }
 
@@ -246,12 +252,31 @@ h3{
 	padding: 100px 0;
 }
 
+.contact_each{
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact_each a{
+	text-decoration: none;
+	border-bottom: 1px solid #B7AFC5;
+	padding-bottom: 8px;
+}
+
+.contact_each p:not(:last-child){
+	margin-bottom: 50px;
+}
+
+.contact_each i{
+	padding-right: 10px;
+}
+
 .geg_contact{
 	flex: 1;
 }
 
-.geg_contact i{
-
+.geg_contact_padding{
+	padding-bottom: 50px;
 }
 
 /*----------------------- QUOTE BANNER ---------------------------*/
@@ -901,6 +926,10 @@ section.flat button.active {
 
 	.header .active{
 		border-bottom: none;
+	}
+
+	.contact_each{
+		flex-direction: column;
 	}
 }
 
